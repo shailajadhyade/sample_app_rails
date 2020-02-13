@@ -33,6 +33,7 @@ section {
 }
 textarea {
   resize: vertical;
+  
 }
 
 .center{
@@ -153,19 +154,24 @@ aside {
 }
 
 /* forms */
-.signup_form{
-  width: 45%;
+.signup_form, .login_form{
+  width: 40%;
   margin: 0 auto;
   border: solid #242424;
   box-shadow: 0px 0px 25px black;
-  padding: 30px 30px 0;
+  padding: 5% 45px 0;
   margin-top: 7%;
 }
-.singup_button{
-  padding: 35px 0 20%;
+.singup_button, .login_button{
+  padding: 6% 0;
 }
+
+.account{
+  margin-bottom: 25%  
+}
+
 input, textarea, select, .uneditable-input {
-  width: 60%;
+  width: 50%;
   border: 1px solid #bbb;
   margin-bottom: 15px;
   @include box_sizing;

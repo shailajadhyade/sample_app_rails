@@ -16,10 +16,14 @@ gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 4.0'
+
+# gem 'yarn', '~> 0.1.1'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
+
+gem 'jquery-rails'
 
 #gem rails-controller-testing  adds/gives 'assigns' and assert_template to both controller and integration tests
 gem 'rails-controller-testing'
@@ -33,7 +37,9 @@ gem 'gravatar_image_tag', '~> 1.2'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
+# gem 'yarn', '~> 0.1.1'
 
+gem 'optimist', '~> 3.0'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 

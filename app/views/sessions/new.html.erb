@@ -1,0 +1,25 @@
+<% provide(:title, "Log in") %>
+<div class = "login_form">
+
+<div class="row">
+<div class="col-md-12 ">
+<%= form_for(:session, url: login_path) do |form| %>
+<%#= render 'shared/error_messages' %>
+   <h1>Log in</h1>
+   <div class="form-group">
+		<%= form.label :email %>
+		<%= form.email_field :email, class: "form-control" %>
+   </div>
+
+   <div class="form-group">
+   		<%= form.label :password %>
+		<%= form.password_field :password, class: "form-control" %>
+	</div>
+	<div class="actions text-center login_button" >
+		<%= form.submit "Log in", class: "btn btn-primary" %>
+	</div>
+<% end %>
+<p class="account text-center">New user? <%= link_to "Sign up now!", signup_path %></p>
+</div>
+</div>
+</div>

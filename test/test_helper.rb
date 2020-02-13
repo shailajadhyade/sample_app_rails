@@ -11,6 +11,11 @@ class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
 
+  # Returns true if a test user is logged in.
+	def is_logged_in?
+	!session[:user_id].nil?
+	end
+
   #to use the full_title helper in the tests by including the Applicationhelper into the test helper,
   include ApplicationHelper
   # Add more helper methods to be used by all tests here...
